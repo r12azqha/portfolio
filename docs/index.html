@@ -734,8 +734,8 @@
                     </div>
                 </div>
 
-                <div class="flex-1 flex flex-col p-8 md:p-12">
-                    <div class="w-full flex justify-between items-center mb-8 z-10 relative">
+                <div class="flex-1 flex flex-col p-8 md:p-12 min-h-0">
+                    <div class="w-full flex justify-between items-center mb-6 z-10 relative">
                         <i data-lucide="crosshair" class="w-6 h-6 text-brand-yellow"></i>
                         
                         <div class="bounding-box border border-brand-yellow/50 px-8 py-3 bg-brand-purple">
@@ -750,8 +750,26 @@
                         <i data-lucide="crosshair" class="w-6 h-6 text-brand-yellow"></i>
                     </div>
 
-                    <div class="flex-1 w-full h-full relative border-2 border-brand-dark overflow-hidden bg-brand-dark shadow-[8px_8px_0_#0A0A0A]">
-                        <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/Screenshot%202026-05-06%20081915.png?raw=true" class="w-full h-full object-cover transition-transform duration-500" alt="3D Modeling Project">
+                    <!-- Split container for Image + Description -->
+                    <div class="flex-1 flex flex-col md:flex-row gap-6 h-full min-h-0">
+                        <div class="flex-1 md:flex-[3] relative border-2 border-brand-dark overflow-hidden bg-brand-dark shadow-[4px_4px_0_#0A0A0A]">
+                            <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/Screenshot%202026-05-06%20081915.png?raw=true" class="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]" alt="3D Modeling Project">
+                        </div>
+                        
+                        <!-- Side description box with brutalist cards -->
+                        <div class="flex-1 md:flex-[1] border-2 border-brand-dark bg-white text-brand-dark p-4 md:p-6 flex flex-col justify-between shadow-[4px_4px_0_#FFE25B] relative min-h-0">
+                            <div class="absolute -top-2.5 -left-2.5 w-5 h-5 star-bullet bg-brand-purple"></div>
+                            <div class="overflow-y-auto">
+                                <h3 class="font-black text-base md:text-lg text-brand-purple uppercase mb-3">Blender Workflow</h3>
+                                <p class="text-xs font-medium text-gray-700 leading-relaxed">
+                                    Behind-the-scenes look at my workspace and technical progress for a modeling assignment. This showcases how the structural geometry looks and flow of the Blender final viewport render.
+                                </p>
+                            </div>
+                            <div class="border-t border-brand-purple/20 pt-3 mt-4 flex justify-between text-[10px] font-mono font-bold text-brand-purple">
+                                <span>ENGINE: BLENDER</span>
+                                <span>WORK: WORKSTATION</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -778,8 +796,8 @@
                     </div>
                 </div>
 
-                <div class="flex-1 flex flex-col p-8 md:p-12">
-                    <div class="w-full flex justify-between items-center mb-8 z-10 relative">
+                <div class="flex-1 flex flex-col p-8 md:p-12 min-h-0">
+                    <div class="w-full flex justify-between items-center mb-6 z-10 relative">
                         <i data-lucide="folder" class="w-6 h-6 text-brand-purple"></i>
                         
                         <div class="bounding-box border border-brand-purple/50 px-8 py-3 bg-brand-light">
@@ -794,15 +812,28 @@
                         <i data-lucide="folder" class="w-6 h-6 text-brand-purple"></i>
                     </div>
 
-                    <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-4 h-full relative">
-                        <div class="w-full h-full border-2 border-brand-purple overflow-hidden relative group cursor-pointer bg-brand-purple shadow-[4px_4px_0_#8F5BFF]">
-                             <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/BILAL107XXX-a.png?raw=true" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Personal Project 1">
+                    <!-- Layout: Three full height portrait images with brutalist floating card overlay like Page 9 -->
+                    <div class="flex-1 relative min-h-0 border-2 border-brand-purple shadow-[8px_8px_0_#8F5BFF]">
+                        <!-- Original portrait style grid using object-cover -->
+                        <div class="grid grid-cols-3 h-full w-full">
+                            <div class="overflow-hidden relative border-r-2 border-brand-purple">
+                                 <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/BILAL107XXX-a.png?raw=true" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Personal Project 1">
+                            </div>
+                            <div class="overflow-hidden relative border-r-2 border-brand-purple">
+                                 <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/Normalplayer12M-d.png?raw=true" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Personal Project 2">
+                            </div>
+                            <div class="overflow-hidden relative">
+                                 <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/bewburg-e.png?raw=true" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Personal Project 3">
+                            </div>
                         </div>
-                        <div class="w-full h-full border-2 border-brand-purple overflow-hidden relative group cursor-pointer bg-brand-purple shadow-[4px_4px_0_#8F5BFF]">
-                             <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/Normalplayer12M-d.png?raw=true" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Personal Project 2">
-                        </div>
-                        <div class="w-full h-full border-2 border-brand-purple overflow-hidden relative group cursor-pointer bg-brand-purple shadow-[4px_4px_0_#8F5BFF]">
-                             <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/bewburg-e.png?raw=true" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Personal Project 3">
+
+                        <!-- Floating brutalist description overlay similar to Page 9 -->
+                        <div class="absolute bottom-4 left-4 right-4 md:right-auto md:max-w-xl bg-white border-2 border-brand-purple p-4 shadow-[4px_4px_0_#8F5BFF] z-10 text-left">
+                            <div class="absolute -top-2.5 -right-2.5 w-5 h-5 star-bullet bg-brand-yellow"></div>
+                            <h3 class="font-black text-xs md:text-sm text-brand-purple uppercase mb-1">Stylized Render Commissions</h3>
+                            <p class="text-[10px] md:text-xs text-gray-800 leading-relaxed font-medium">
+                                A Roblox commission renders done for @bilal107, @matt1230256, and @mellow. Custom rigging, dynamic character poses, and clean ambient light paths to turn standard Roblox avatars into a clean highly rendered shots.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -830,8 +861,8 @@
                     </div>
                 </div>
 
-                <div class="flex-1 flex flex-col p-8 md:p-12">
-                    <div class="w-full flex justify-between items-center mb-8 z-10 relative">
+                <div class="flex-1 flex flex-col p-8 md:p-12 min-h-0">
+                    <div class="w-full flex justify-between items-center mb-6 z-10 relative">
                         <i data-lucide="video" class="w-6 h-6 text-brand-purple"></i>
                         
                         <div class="bounding-box border border-brand-purple/50 px-8 py-3 bg-white">
@@ -846,8 +877,26 @@
                         <i data-lucide="video" class="w-6 h-6 text-brand-purple"></i>
                     </div>
 
-                    <div class="flex-1 w-full h-full relative border-2 border-brand-purple overflow-hidden bg-brand-dark shadow-[8px_8px_0_#8F5BFF]">
-                        <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/zzz_gacha.gif?raw=true" class="w-full h-full object-cover transition-transform duration-500" alt="Mine-imator Project">
+                    <!-- Split container for Image + Description -->
+                    <div class="flex-1 flex flex-col md:flex-row gap-6 h-full min-h-0 text-brand-dark">
+                        <div class="flex-1 md:flex-[3] relative border-2 border-brand-purple overflow-hidden bg-brand-dark shadow-[4px_4px_0_#8F5BFF]">
+                            <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/zzz_gacha.gif?raw=true" class="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]" alt="Mine-imator Project">
+                        </div>
+                        
+                        <!-- Side description card -->
+                        <div class="flex-1 md:flex-[1] border-2 border-brand-purple bg-white p-4 md:p-6 flex flex-col justify-between shadow-[4px_4px_0_#0A0A0A] relative min-h-0">
+                            <div class="absolute -top-2.5 -right-2.5 w-5 h-5 star-bullet bg-brand-yellow"></div>
+                            <div class="overflow-y-auto">
+                                <h3 class="font-black text-base md:text-lg text-brand-purple uppercase mb-3">Character Showcase</h3>
+                                <p class="text-xs font-medium text-gray-700 leading-relaxed">
+                                    A Minecraft render showcasing Von Lycaon inside Mine-imator. Pushed the engine's lighting options to their absolute limits and messing around with dynamic depth of field, atmospheric blooms to build a cool looking shots.
+                                </p>
+                            </div>
+                            <div class="border-t border-brand-purple/20 pt-3 mt-4 flex justify-between text-[10px] font-mono font-bold text-brand-purple">
+                                <span>TOOL: MINE-IMATOR</span>
+                                <span>FOCUS: VISUAL DEV</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -861,12 +910,26 @@
             </div>
         </section>
 
-        <!-- SLIDE 9: MODULAR PHOTO (1 IMAGE) -->
+        <!-- SLIDE 9: MODULAR PHOTO (1 IMAGE WITH BRUTALIST CAPTION OVERLAY) -->
         <section class="slide-wrapper" id="slide-9">
             <div class="slide-content flex flex-col bg-white relative pb-12">
                 
-                <div class="flex-1 w-full relative overflow-hidden border-b-2 border-brand-purple">
-                    <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/petiteile.png?raw=true" alt="Petite Island Fullscreen" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500">
+                <!-- Background image container with overlaid description card -->
+                <div class="flex-1 w-full relative overflow-hidden flex flex-col justify-end p-6 md:p-12">
+                    <img src="https://github.com/r12azqha/portofolio/blob/main/docs/assets/images/petiteile.png?raw=true" alt="Petite Island Fullscreen" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 z-0">
+                    
+                    <!-- Brutalist Description Overlay Card -->
+                    <div class="z-10 max-w-lg w-full bg-white border-2 border-brand-purple p-5 shadow-[6px_6px_0_#8F5BFF] relative self-start">
+                        <div class="absolute -top-3 -right-3 w-6 h-6 star-bullet bg-brand-yellow"></div>
+                        <h3 class="font-black text-lg text-brand-purple uppercase mb-2">Petite Ile Environment</h3>
+                        <p class="text-xs font-medium text-gray-800 leading-relaxed mb-4">
+                            The final render for my university assignment: a desolate island sitting in a peaceful, quiet sunset. Built a tiny campfire and placed a solitary figure at the end of the wooden dock to sell that lonely, atmospheric evening vibe.
+                        </p>
+                        <div class="flex justify-between items-center text-[9px] font-mono font-bold text-brand-purple border-t border-brand-purple/20 pt-2">
+                            <span>STYLE: LOW-POLY 3D</span>
+                            <span>YEAR: 2026</span>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="absolute bottom-0 left-0 w-full h-12 bg-brand-purple flex items-center justify-between px-6 shrink-0 border-t-2 border-brand-dark text-brand-yellow z-20">
@@ -917,7 +980,7 @@
                 </div>
                 
                 <!-- Contact Box moved to bottom right -->
-                <div class="absolute bottom-16 right-6 md:bottom-20 md:right-12 bg-white border-2 border-brand-purple p-4 shadow-[6px_6px_0_#8F5BFF] z-20 w-auto">
+                <div class="absolute bottom-16 right-6 md:bottom-20 md:right-12 bg-white border-2 border-brand-purple/40 p-4 shadow-[6px_6px_0_#8F5BFF] z-20 w-auto">
                     <div class="space-y-2 font-bold text-brand-purple text-sm font-mono flex flex-col items-end">
                         <div class="flex items-center gap-3">
                             <i data-lucide="mail" class="w-5 h-5"></i>
